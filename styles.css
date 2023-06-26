@@ -1,0 +1,152 @@
+table{
+    width:70%;
+}
+
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+/* tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+} */
+
+.section{
+   
+  display: flex;
+  flex-wrap: wrap;
+}
+.one{
+   flex:3;
+   
+}
+.two{
+  flex:7;
+}
+.button{
+   
+  display: flex;
+  flex-wrap: wrap;
+}
+.but{
+   flex:1;
+   
+}
+
+#edit{
+  width: 100px;
+    height: 30px;background-color:black;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin:0; 
+    font-size:15px
+}
+
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px; 
+} 
+ /* label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none; 
+} */
+ label{
+    
+    margin-left:0;
+   } 
+    
+  
+  /* input,select{ 
+    flex:0 0 200px;
+    margin-left:10px; 
+    justify-content :left;
+}  */
+    
+select{
+        width:30%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      select[name="employeeGender"] {
+    
+        width: 40%;
+        min-height: 30px;
+        font-size: 15px;
+      } 
+input {
+        width:80%;
+        padding-left: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+ Button{
+        background-color:black;
+        color: white;
+        padding: 14px 20px;
+        margin: 0;
+        border: none;
+        width: 25%;
+        font-size: 20px;
+         border-radius: 5px;
+      } 
+      .modal{
+        width:300px;
+        height:400px;
+        background-color:gray;
+        position:fixed;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        opacity:0;
+        z-index: -1;
+
+      }
+      .modal.active{
+        opacity:1;
+        z-index: 1;
+      }
+      .edit-form {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        z-index: 9999;
+      }
+
+      .form-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+      }
+
+      .navbar {
+        background-color: #800080;
+        overflow: hidden;
+      }

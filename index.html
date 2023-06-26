@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>  git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
+    <title>
+        Employee Portal
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="navbar">
+    <h1>Employee Portal</h1>
+</div>
+    
+<div class="section">
+     <div class="one" style="background-color:#DDA0DD;">
+            <h1 >Add Employee</h1>
+            <form id="AddForm" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" style="padding: 10%;">
+                    <div>
+                        <label>EmployeeID</label><br>
+                        <input type="number" name="employeeID" id="employeeID" required>
+                    </div>
+                    <div id="id-error" style="color:red;text-align: left;margin-left: 0;"></div><br>
+                    <div>
+                        <label>Name</label><br>
+                        <input type="text" name="employeeName" id="employeeName">
+                    </div>
+                    <div id="name-error" style="color:red;text-align: left;margin-left:0;"required></div><br>
+                    <div>
+                        <label>Age</label><br>
+                        <input type="number" name="employeeAge" id="employeeAge">
+                    </div>
+                    <div id="age-error" style="color:red;text-align: left;margin-left:0;"required></div><br>
+                    <div>
+                        
+                        <label>Gender</label><br>
+                        <select  name="employeeGender" id="employeeGender" required>
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div><br>
+                    <div >
+                        <input type="submit" value="Add Employee" id="add">
+                    </div>
+                </form>
+                </div>
+ 
+    <div class="form-popup" id="myForm" style="background-color: #DDA0DD;padding: 5%;" >
+         <h1>Edit Employee</h1>
+            <form id="editForm">
+             <div>
+                <label>EmployeeID</label><br>
+                <input type="number" name="ID" id="ID">
+            <div id="i-error" style="color:red;text-align: left;margin-left: 0;"></div>
+            </div>               
+             <label>Name</label><br>
+                <input type="text" name="Name" id="Name">
+                <div id="n-error" style="color:red;text-align: left;margin-left: 0;"></div>
+             <div> 
+                 <label>Age</label><br>
+                    <input type="number" name="Age" id="Age">
+                </div>
+                <div id="a-error" style="color:red;text-align: left;margin-left: 0;"></div>
+                <div>
+                    <label>Gender</label><br>
+                    <select  name="Gender" id="Gender">
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                   
+                </div>
+                <br>
+                <div  class="button">
+                    <div class="but 1">
+                    <input type="button" value="Cancel" onclick="closeForm()">
+                </div>
+                <div class="but 2">
+                    <input type="submit" id="update" value="Update"onclick="onUpdate()" >
+                </div>
+                </div>
+            </form></div>
+        
+            <div class="two">
+                <h1>Employee Details</h1>
+                <table class="list" id="employeeList" >
+                    <thead>
+                        <tr style="padding-top:30%">
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th id="action">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+            
+           
+    <script src="script.js"></script>
+</body>
+
+</html>
